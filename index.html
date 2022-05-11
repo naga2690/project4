@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="demo-styles.css">
+    
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+    
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+  </head> 
+<body>
+  <div id="card">
+    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer src="asset/telescopic.glb"
+                  ios-src="asset/telescopic.usdz"
+                  poster="asset/Telescopic.jpg"
+                  alt="A 3D model of Telescopic"
+                  shadow-intensity="1"
+                  camera-controls
+                  auto-rotate ar>
+    </model-viewer>
+    <section class="attribution">
+      <span>
+        <h1>Telescopic Tooling</h1>
+        <span>By <a href="https://www.festo.com/ca/en/c/products-id_pim1/" target="_blank">festo</a></span>
+      </span>
+    </section>
+    <section class="Video Links">
+      <span>Please see the Tooling in action in the below links</span>
+       <span>
+    <a class="icon" href="https://www.youtube.com/watch?v=C2M1LUsWGsc" target="_blank">
+         <img src="asset/icon.svg" alt="video" width="50" height="50">
+      <a class="icon" href="https://www.youtube.com/watch?v=Dv9pFatdy8s" target="_blank"> 
+        <img src="asset/icon.svg" alt="video" width="50" height="50">
+      </a>
+      
+      </span>
+   </section> 
+    
+  </div>
+  
+  
+  <!-- 💁 Include both scripts below to support all browsers! -->
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+</body>
+</html>
